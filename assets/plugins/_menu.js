@@ -27,7 +27,7 @@ Description: ${i.desc}\`\`\``);
     } else {
       let { prefix } = message;
       let [date, time] = new Date()
-        .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
+        .toLocaleString("en-IN", { timeZone: "Afrique/Abidjan" })
         .split(",");
       let menu = `╭━━━━━ᆫ ${BOT_NAME} ᄀ━━━
 ┃ ⎆  *OWNER*:  ${OWNER_NAME}
@@ -56,16 +56,16 @@ Description: ${i.desc}\`\`\``);
       });
       cmnd.sort();
       category.sort().forEach((cmmd) => {
-        menu += `\n\t⦿---- *${cmmd.toUpperCase()}* ----⦿\n`;
+        menu += `\n\t *${cmmd.toUpperCase()}* \n`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n⛥  _${cmd.trim()}_ `;
+          menu += `\n  _${cmd.trim()}_ `;
         });
         menu += `\n`;
       });
 
       menu += `\n`;
-      menu += `_🔖Send ${prefix}menu <command name> to get detailed information of a specific command._\n*📍Eg:* _${prefix}menu plugin_`;
+      menu += `_send  ${prefix}menu <command name> to get detailed information of a specific command._\n*📍Eg:* _${prefix}menu plugin_`;
       return await message.sendMessage(message.jid,menu);
     }
   }
