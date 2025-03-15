@@ -1,6 +1,6 @@
 {
-  "name": "x-asena",
-  "version": "3.0.0",
+  "name": "DRACULA",
+  "version": "1.0.0",
   "description": "Whatsapp Bot",
   "main": "index.js",
   "directories": {
@@ -43,7 +43,7 @@
     "x-asena": "^1.0.1"
   },
   "scripts": {
-    "start": "pm2 start index.js --name x-asena && pm2 logs x-asena",
+    "start": "pm2 start index.js --name dracula && pm2 logs dracula",
     "code": "node lib/pcode.js",
     "test": "jest --coverage"
   },
