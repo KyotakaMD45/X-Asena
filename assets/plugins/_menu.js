@@ -27,7 +27,7 @@ Description: ${i.desc}\`\`\``);
     } else {
       let { prefix } = message;
       let [date, time] = new Date()
-        .toLocaleString("en-IN", { timeZone: "Afrique/Abidjan" })
+        .toLocaleString("en-IN", { timeZone: "Africa/Abidjan" })
         .split(",");
       let menu = `╭━━━━━ᆫ ${BOT_NAME} ᄀ━━━
 ┃ ⎆  *OWNER*:  ${OWNER_NAME}
